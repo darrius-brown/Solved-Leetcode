@@ -16,7 +16,6 @@ var partitionString = function(s) {
         }
     }
 
-    // Add the count for the last substring if it's not empty
     if (checkArray.length > 0) {
         output++;
     }
