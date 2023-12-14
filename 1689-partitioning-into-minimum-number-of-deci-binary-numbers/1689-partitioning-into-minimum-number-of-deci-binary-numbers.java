@@ -1,10 +1,11 @@
 class Solution {
     public int minPartitions(String n) {
-        TreeSet<Integer> ts1 = new TreeSet<>(); 
-        for(int i=0;i<n.length();i++){
-            ts1.add(Integer.parseInt(String.valueOf(n.charAt(i))));
+        int output = 0;
+        for (char digit: n.toCharArray()) {
+            if (digit - '0' > output) {
+                output = digit - '0';
+            } 
         }
-        int fin=ts1.last();
-        return fin;
+        return output;
     }
 }
