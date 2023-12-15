@@ -4,12 +4,9 @@
  * @return {number}
  */
 var numberOfEmployeesWhoMetTarget = function(hours, target) {
-   let counter = 0
-   for (const i in hours) {
-       if (hours[i] >= target) {
-           counter++
-       }
-   }
-
-    return counter
+    const greaterThanTarget = (hour) => {
+        return hour >= target
+    }
+    outputArray = hours.filter(greaterThanTarget)
+return outputArray.length
 };
