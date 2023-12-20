@@ -19,5 +19,5 @@ var pivotArray = function(nums, pivot) {
         }
     
     }
-    return [...before, ...piv, ...after]
+    return before.concat(piv, after)
 }
