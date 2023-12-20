@@ -11,10 +11,10 @@ var pivotArray = function(nums, pivot) {
         if (nums[i] < pivot) {
             before.push(nums[i])
         }
-        if (nums[i] === pivot) {
+        else if (nums[i] === pivot) {
             piv.push(nums[i])
         }
-        if (nums[i] > pivot) {
+        else  {
             after.push(nums[i])
         }
     
