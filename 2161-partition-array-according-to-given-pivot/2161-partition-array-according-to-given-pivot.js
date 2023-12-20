@@ -7,7 +7,7 @@ var pivotArray = function(nums, pivot) {
     let before = []
     let after = []
     let piv = []
-    for (let i = 0; i < nums.length; i++) {
+    for (const i in nums) {
         if (nums[i] < pivot) {
             before.push(nums[i])
         }
